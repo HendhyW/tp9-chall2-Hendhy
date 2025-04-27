@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    if (count % 10 === 0) {
+    if (count % 10 === 0 && count !== 0) {
       alert( count.toString() + ' dapat dibagi dengan 10');
     }
   }, [count]);
